@@ -12,22 +12,6 @@ A fun, interactive web-based musical instrument that lets users play **piano**, 
 * 🎤 Record and **download** your own performances
 * 📱 Clean, responsive interface with visual feedback
 
----
-
-### 🧰 Project Structure
-
-```
-/web-instrument-player
-│
-├── index.html           # Main app layout
-├── style.css            # Basic styling 
-├── script.js            # JavaScript logic and audio handling
-├── /sounds              # Folder containing audio files
-│   ├── piano/
-│   ├── drums/
-│   └── guitar/
-└── README.md            # This file
-```
 
 ---
 
