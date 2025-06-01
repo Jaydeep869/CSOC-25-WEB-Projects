@@ -5,8 +5,11 @@ const authenticate = require("./middleware/auth");
 const snippetRoutes = require("./routes/snippetRoutes");
 require("dotenv").config();
 
+app.use(cors({
+  origin: "https://snippet-hub-kappa.vercel.app",
+  credentials: true
+}));
 const app = express();
-app.use(cors());
 app.use(express.json());
 
 mongoose.connect(process.env.MONGO_URI)
