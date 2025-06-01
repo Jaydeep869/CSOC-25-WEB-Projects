@@ -13,10 +13,6 @@ mongoose.connect(process.env.MONGO_URI)
   .then(() => console.log("MOMGODB connected"))
   .catch((err) => console.error("MONGODB connection failed", err));
 
-app.get('/',(req,res)=>{
-  console.log("server is running");
-})
-
 app.use("/api/snippets", snippetRoutes);
 
 const PORT = process.env.PORT || 5000;
